@@ -18,6 +18,7 @@ import dart from '../app/assets/svg/skills/dart.svg';
 import deno from '../app/assets/svg/skills/deno.svg';
 import django from '../app/assets/svg/skills/django.svg';
 import docker from '../app/assets/svg/skills/docker.svg';
+import express from '../app/assets/svg/skills/express.svg';
 import fastify from '../app/assets/svg/skills/fastify.svg';
 import figma from '../app/assets/svg/skills/figma.svg';
 import firebase from '../app/assets/svg/skills/firebase.svg';
@@ -254,6 +255,8 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'express':
+      return express
     default:
       break;
   }
