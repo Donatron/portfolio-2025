@@ -7,21 +7,29 @@ export const skillsData = [
   'Next JS',
   'Tailwind',
   'MongoDB',
+  'Jest',
   'MySQL',
-  // 'PostgreSQL',
   'Git',
   'AWS',
   'Bootstrap',
-  // 'Docker',
-  // 'Go',
   'Figma',
   'Firebase',
   'MaterialUI',
-  // 'Nginx',
-  // 'Strapi'
   'GCP',
-  'express'
 ]
+
+/* 
+  ! Skills to add
+  Jest
+  AWS
+  Express
+  Microservices
+  JSON
+  SASS
+  Redux
+  MongoDB
+  Node.js
+*/
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
 // Couldn't find the required skills? Raise an issue on github at https://github.com/hhhrrrttt222111/developer-portfolio/issues/new

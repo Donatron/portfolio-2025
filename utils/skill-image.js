@@ -18,7 +18,6 @@ import dart from '../app/assets/svg/skills/dart.svg';
 import deno from '../app/assets/svg/skills/deno.svg';
 import django from '../app/assets/svg/skills/django.svg';
 import docker from '../app/assets/svg/skills/docker.svg';
-import express from '../app/assets/svg/skills/express.svg';
 import fastify from '../app/assets/svg/skills/fastify.svg';
 import figma from '../app/assets/svg/skills/figma.svg';
 import firebase from '../app/assets/svg/skills/firebase.svg';
@@ -34,6 +33,7 @@ import illustrator from '../app/assets/svg/skills/illustrator.svg';
 import ionic from '../app/assets/svg/skills/ionic.svg';
 import java from '../app/assets/svg/skills/java.svg';
 import javascript from '../app/assets/svg/skills/javascript.svg';
+import jest from '../app/assets/svg/skills/jest.png'
 import julia from '../app/assets/svg/skills/julia.svg';
 import kotlin from '../app/assets/svg/skills/kotlin.svg';
 import lightroom from '../app/assets/svg/skills/lightroom.svg';
@@ -155,6 +155,8 @@ export const skillsImage = (skill) => {
       return go;
     case 'java':
       return java;
+    case 'jest':
+      return jest
     case 'kotlin':
       return kotlin;
     case 'julia':
