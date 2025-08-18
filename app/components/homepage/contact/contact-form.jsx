@@ -14,6 +14,35 @@ function ContactForm() {
     email: "",
     message: "",
   });
+  
+  const CustomErrorIcon = () => {
+    return (
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <circle cx="12" cy="12" r="12" fill="#121212" />
+        <path
+          d="M8 8l8 8M16 8l-8 8"
+          stroke="#e74c3c"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+      </svg>
+    );
+  }
+  
+  const CustomSuccessIcon = () => {
+    return (
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <circle cx="12" cy="12" r="12" fill="oklch(60.6% 0.25 292.717)" />
+        <path
+          d="M7 12l4 4 6-8"
+          stroke="#16f2b3"
+          strokeWidth="2"
+          strokeLinecap="round"
+          fill="none"
+        />
+      </svg>
+    );
+  }
 
   const checkRequired = () => {
     if (userInput.email && userInput.message && userInput.name) {
@@ -35,19 +64,24 @@ function ContactForm() {
 
     try {
       setIsLoading(true);
-      const res = await axios.post(
+      await axios.post(
         `${process.env.NEXT_PUBLIC_APP_URL}/api/contact`,
         userInput
       );
 
-      toast.success("Message sent successfully!");
+      toast.success("Thanks for your message! I'll get back to you shortly.", {
+        icon: <CustomSuccessIcon  />
+      });
+
       setUserInput({
         name: "",
         email: "",
         message: "",
       });
     } catch (error) {
-      toast.error(error?.response?.data?.message);
+      toast.error(error?.response?.data?.message, {
+        icon: <CustomErrorIcon />
+      });
     } finally {
       setIsLoading(false);
     };
