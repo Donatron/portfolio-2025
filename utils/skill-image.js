@@ -20,6 +20,7 @@ import django from '../app/assets/svg/skills/django.svg';
 import docker from '../app/assets/svg/skills/docker.svg';
 import dotnet from '../app/assets/svg/skills/dotnet.svg';
 import dotnetcore from '../app/assets/svg/skills/dotnetcore.svg'
+import express from '../app/assets/svg/skills/express.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
 import fastify from '../app/assets/svg/skills/fastify.svg';
 import figma from '../app/assets/svg/skills/figma.svg';
@@ -36,7 +37,8 @@ import illustrator from '../app/assets/svg/skills/illustrator.svg';
 import ionic from '../app/assets/svg/skills/ionic.svg';
 import java from '../app/assets/svg/skills/java.svg';
 import javascript from '../app/assets/svg/skills/javascript.svg';
-import jest from '../app/assets/svg/skills/jest.png'
+import jest from '../app/assets/svg/skills/jest.svg'
+import json from '../app/assets/svg/skills/json.svg'
 import julia from '../app/assets/svg/skills/julia.svg';
 import kotlin from '../app/assets/svg/skills/kotlin.svg';
 import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
@@ -51,6 +53,7 @@ import mongoDB from '../app/assets/svg/skills/mongoDB.svg';
 import mysql from '../app/assets/svg/skills/mysql.svg';
 import nextJS from '../app/assets/svg/skills/nextJS.svg';
 import nginx from '../app/assets/svg/skills/nginx.svg';
+import nodejs from '../app/assets/svg/skills/nodejs.svg';
 import numpy from '../app/assets/svg/skills/numpy.svg';
 import nuxtJS from '../app/assets/svg/skills/nuxtJS.svg';
 import opencv from '../app/assets/svg/skills/opencv.svg';
@@ -64,7 +67,9 @@ import prisma from '../app/assets/svg/skills/prisma.svg';
 import python from '../app/assets/svg/skills/python.svg';
 import pytorch from '../app/assets/svg/skills/pytorch.svg';
 import react from '../app/assets/svg/skills/react.svg';
+import redux from '../app/assets/svg/skills/redux.svg';
 import ruby from '../app/assets/svg/skills/ruby.svg';
+import sass from '../app/assets/svg/skills/sass.svg';
 import scikitlearn from '../app/assets/svg/skills/scikit-learn.svg';
 import selenium from '../app/assets/svg/skills/selenium.svg';
 import sketch from '../app/assets/svg/skills/sketch.svg';
@@ -166,6 +171,8 @@ export const skillsImage = (skill) => {
       return javascript;
     case 'jest':
       return jest;
+    case 'json':
+      return json;
     case 'julia':
       return julia;
     case 'kotlin':
@@ -194,6 +201,8 @@ export const skillsImage = (skill) => {
       return nextJS;
     case 'nginx':
       return nginx;
+    case 'node js':
+      return nodejs;
     case 'numpy':
       return numpy;
     case 'nuxt js':
@@ -220,8 +229,12 @@ export const skillsImage = (skill) => {
       return pytorch;
     case 'react':
       return react;
+    case 'redux':
+      return redux;
     case 'ruby':
       return ruby;
+    case 'sass':
+      return sass;
     case 'selenium':
       return selenium;
     case 'sketch':

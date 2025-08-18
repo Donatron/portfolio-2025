@@ -38,7 +38,7 @@ function Skills() {
         >
           {
             skillsData?.length
-              ? skillsData.map((skill, id) => <Skill id={id} skill={skill} />)
+              ? skillsData.map((skill, id) => <Skill key={`skill-${id}`} id={`skill-${id}`} skill={skill} />)
               : null
           }
         </Marquee>
