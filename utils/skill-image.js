@@ -18,6 +18,9 @@ import dart from '../app/assets/svg/skills/dart.svg';
 import deno from '../app/assets/svg/skills/deno.svg';
 import django from '../app/assets/svg/skills/django.svg';
 import docker from '../app/assets/svg/skills/docker.svg';
+import dotnet from '../app/assets/svg/skills/dotnet.svg';
+import dotnetcore from '../app/assets/svg/skills/dotnetcore.svg'
+import fastapi from '../app/assets/svg/skills/fastapi.svg'
 import fastify from '../app/assets/svg/skills/fastify.svg';
 import figma from '../app/assets/svg/skills/figma.svg';
 import firebase from '../app/assets/svg/skills/firebase.svg';
@@ -36,7 +39,9 @@ import javascript from '../app/assets/svg/skills/javascript.svg';
 import jest from '../app/assets/svg/skills/jest.png'
 import julia from '../app/assets/svg/skills/julia.svg';
 import kotlin from '../app/assets/svg/skills/kotlin.svg';
+import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
 import lightroom from '../app/assets/svg/skills/lightroom.svg';
+import linux from '../app/assets/svg/skills/linux.svg'
 import markdown from '../app/assets/svg/skills/markdown.svg';
 import materialui from '../app/assets/svg/skills/materialui.svg';
 import matlab from '../app/assets/svg/skills/matlab.svg';
@@ -49,6 +54,7 @@ import nginx from '../app/assets/svg/skills/nginx.svg';
 import numpy from '../app/assets/svg/skills/numpy.svg';
 import nuxtJS from '../app/assets/svg/skills/nuxtJS.svg';
 import opencv from '../app/assets/svg/skills/opencv.svg';
+import pandas from '../app/assets/svg/skills/pandas.svg';
 import photoshop from '../app/assets/svg/skills/photoshop.svg';
 import php from '../app/assets/svg/skills/php.svg';
 import picsart from '../app/assets/svg/skills/picsart.svg';
@@ -59,8 +65,10 @@ import python from '../app/assets/svg/skills/python.svg';
 import pytorch from '../app/assets/svg/skills/pytorch.svg';
 import react from '../app/assets/svg/skills/react.svg';
 import ruby from '../app/assets/svg/skills/ruby.svg';
+import scikitlearn from '../app/assets/svg/skills/scikit-learn.svg';
 import selenium from '../app/assets/svg/skills/selenium.svg';
 import sketch from '../app/assets/svg/skills/sketch.svg';
+import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import strapi from '../app/assets/svg/skills/strapi.svg';
 import svelte from '../app/assets/svg/skills/svelte.svg';
 import swift from '../app/assets/svg/skills/swift.svg';
@@ -74,17 +82,6 @@ import vuetifyjs from '../app/assets/svg/skills/vuetifyjs.svg';
 import webix from '../app/assets/svg/skills/webix.svg';
 import wolframalpha from '../app/assets/svg/skills/wolframalpha.svg';
 import wordpress from '../app/assets/svg/skills/wordpress.svg';
-
-import pandas from '../app/assets/svg/skills/pandas.svg';
-import scikitlearn from '../app/assets/svg/skills/scikit-learn.svg';
-import dotnet from '../app/assets/svg/skills/dotnet.svg';
-import dotnetcore from '../app/assets/svg/skills/dotnetcore.svg'
-import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
-import linux from '../app/assets/svg/skills/linux.svg'
-import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
-import fastapi from '../app/assets/svg/skills/fastapi.svg'
-
-
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
