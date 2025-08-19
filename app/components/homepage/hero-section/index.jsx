@@ -2,14 +2,11 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-
 
 import HeroCodeSection from './hero-code-section';
 import HeroContactlLinks from './hero-contact-links';
 import HeroSocialLinks from './hero-social-links';
 import HeroTitle from './hero-title';
-import { personalData } from '@/utils/data/personal-data';
 
 function HeroSection() {
   return (
