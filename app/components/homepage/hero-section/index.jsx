@@ -7,12 +7,8 @@ import { RiContactsFill } from 'react-icons/ri';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import HeroAttributes from './hero-attributes';
-import HeroCode from './hero-code';
+
 import HeroCodeSection from './hero-code-section';
-import HeroFunction from './hero-function';
-import HeroHireable from './hero-hireable';
-import HeroSkills from './hero-skills';
 import { personalData } from '@/utils/data/personal-data';
 
 function HeroSection() {
