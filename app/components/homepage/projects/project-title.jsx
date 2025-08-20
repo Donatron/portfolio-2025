@@ -1,15 +1,16 @@
 import React from "react";
 
-function ProjectTitle() {
+function ProjectTitle({ title }) {
   return (
-    <div className="sticky top-10">
-      <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl  opacity-30"></div>
-      <div className="flex items-center justify-start relative">
-        <span className="bg-[#1a1443] absolute left-0  w-fit text-white px-5 py-3 text-xl rounded-md">
-          Achievements
-        </span>
-        <span className="w-full h-[2px] bg-[#1a1443]"></span>
+    <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
+      <div className="flex flex-row space-x-1 lg:space-x-2 absolute top-1/2 -translate-y-1/2">
+        <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-red-400"></div>
+        <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-orange-400"></div>
+        <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-green-200"></div>
       </div>
+      <p className="text-center ml-3 text-[#16f2b3] text-base lg:text-xl">
+        {title}
+      </p>
     </div>
   )
 }

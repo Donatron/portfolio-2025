@@ -1,11 +1,11 @@
 import React from "react";
 import ProjectList from "./project-list";
-import ProjectTitle from "./project-title";
+import ProjectSectionTitle from "./project-section-title";
 
 function ProjectDetails() {
   return (
     <>
-      <ProjectTitle />
+      <ProjectSectionTitle />
       <ProjectList />
     </>
   )
