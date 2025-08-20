@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
-import ProjectCard from "./project-card";
-import { projectsData } from '@/utils/data/projects-data';
+import ProjectCard from './project-card'
+import { projectsData } from '@/utils/data/projects-data'
 
 function ProjectList() {
   return (

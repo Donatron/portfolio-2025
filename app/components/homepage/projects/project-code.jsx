@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import ProjectTitle from "./project-title";
+import ProjectTitle from './project-title'
 
 function ProjectCode({ children, projectName }) {
   return (
@@ -26,14 +26,15 @@ function ProjectCode({ children, projectName }) {
             <span className="text-gray-400">{`',`}</span>
           </div>
 
-            {children}
-            
-          <div><span className="text-gray-400">{`};`}</span></div>
+          {children}
+
+          <div>
+            <span className="text-gray-400">{`};`}</span>
+          </div>
         </code>
       </div>
-      
     </div>
-  );
+  )
 }
 
 export default ProjectCode
