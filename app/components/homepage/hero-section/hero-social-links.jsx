@@ -1,9 +1,8 @@
-import React from "react";
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
-import Link from "next/link";
+import React from 'react'
+import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import Link from 'next/link'
 
-
-import { personalData } from '@/utils/data/personal-data';
+import { personalData } from '@/utils/data/personal-data'
 
 function HeroSocialLinks() {
   return (

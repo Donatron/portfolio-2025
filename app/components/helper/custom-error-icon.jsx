@@ -1,5 +1,5 @@
-import React from "react";
-  
+import React from 'react'
+
 function CustomErrorIcon() {
   return (
     <svg viewBox="0 0 24 24" width="24" height="24">
@@ -11,7 +11,7 @@ function CustomErrorIcon() {
         strokeLinecap="round"
       />
     </svg>
-  );
+  )
 }
 
 export default CustomErrorIcon

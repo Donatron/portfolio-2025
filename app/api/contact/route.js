@@ -1,12 +1,12 @@
-import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
+import { NextResponse } from 'next/server'
+import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request) {
   try {
-    const payload = await request.json();
-    const { name, email, message: userMessage } = payload;
+    const payload = await request.json()
+    const { name, email, message: userMessage } = payload
 
     const html = `
       <div style="font-family: Arial, sans-serif; color: #333; padding: 20px; background-color: #f4f4f4;">
@@ -21,28 +21,35 @@ export async function POST(request) {
           <p style="font-size: 12px; color: #888;">Click reply to respond to the sender.</p>
         </div>
       </div>
-    `;
+    `
 
     // 🚀 Fire-and-forget send
-    resend.emails.send({
-      from: 'Portfolio <onboarding@resend.dev>',
-      to: process.env.EMAIL_ADDRESS,
-      subject: `New Message From ${name}`,
-      reply_to: email,
-      html,
-    }).catch(err => console.error('Resend error:', err));
+    resend.emails
+      .send({
+        from: 'Portfolio <onboarding@resend.dev>',
+        to: process.env.EMAIL_ADDRESS,
+        subject: `New Message From ${name}`,
+        reply_to: email,
+        html,
+      })
+      .catch((err) => console.error('Resend error:', err))
 
     // Respond immediately
-    return NextResponse.json({
-      success: true,
-      message: 'Your message has been received. Thanks!',
-    }, { status: 200 });
-
+    return NextResponse.json(
+      {
+        success: true,
+        message: 'Your message has been received. Thanks!',
+      },
+      { status: 200 }
+    )
   } catch (error) {
-    console.error('API Error:', error);
-    return NextResponse.json({
-      success: false,
-      message: 'Server error occurred.',
-    }, { status: 500 });
+    console.error('API Error:', error)
+    return NextResponse.json(
+      {
+        success: false,
+        message: 'Server error occurred.',
+      },
+      { status: 500 }
+    )
   }
 }

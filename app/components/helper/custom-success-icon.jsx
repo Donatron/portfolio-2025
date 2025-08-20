@@ -1,4 +1,4 @@
-import React from "react";  
+import React from 'react'
 
 const CustomSuccessIcon = () => {
   return (
@@ -12,7 +12,7 @@ const CustomSuccessIcon = () => {
         fill="none"
       />
     </svg>
-  );
+  )
 }
 
 export default CustomSuccessIcon

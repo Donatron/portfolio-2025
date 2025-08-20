@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import EducationList from "./education-list";
-import study from '../../../assets/lottie/study.json';
-import AnimationLottie from "../../helper/animation-lottie";
+import EducationList from './education-list'
+import study from '../../../assets/lottie/study.json'
+import AnimationLottie from '../../helper/animation-lottie'
 
 function EducationDetails() {
   return (

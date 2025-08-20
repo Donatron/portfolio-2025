@@ -1,18 +1,14 @@
-import React from "react";
+import React from 'react'
 
 function HeroHireable() {
   return (
     <>
       <div>
-        <span className="ml-4 lg:ml-8 mr-2 text-green-400">
-          hireable:
-        </span>
+        <span className="ml-4 lg:ml-8 mr-2 text-green-400">hireable:</span>
         <span className="text-gray-400">{'() => {'}</span>
       </div>
       <div>
-        <span className="ml-8 lg:ml-16 mr-2 text-orange-400">
-          return
-        </span>
+        <span className="ml-8 lg:ml-16 mr-2 text-orange-400">return</span>
         <span className="text-gray-400">{`(`}</span>
       </div>
       <div>

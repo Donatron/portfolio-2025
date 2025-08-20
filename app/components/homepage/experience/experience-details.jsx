@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import ExperienceList from "./experience-list";
-import experience from '../../../assets/lottie/code.json';
-import AnimationLottie from "../../helper/animation-lottie";
+import ExperienceList from './experience-list'
+import experience from '../../../assets/lottie/code.json'
+import AnimationLottie from '../../helper/animation-lottie'
 
 function ExperienceDetails() {
   return (
