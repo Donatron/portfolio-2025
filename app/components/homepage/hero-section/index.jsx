@@ -1,12 +1,12 @@
 // @flow strict
 
-import React from 'react';
-import Image from 'next/image';
+import React from 'react'
+import Image from 'next/image'
 
-import HeroCodeSection from './hero-code-section';
-import HeroContactlLinks from './hero-contact-links';
-import HeroSocialLinks from './hero-social-links';
-import HeroTitle from './hero-title';
+import HeroCodeSection from './hero-code-section'
+import HeroContactlLinks from './hero-contact-links'
+import HeroSocialLinks from './hero-social-links'
+import HeroTitle from './hero-title'
 
 function HeroSection() {
   return (
@@ -28,7 +28,7 @@ function HeroSection() {
         <HeroCodeSection />
       </div>
     </section>
-  );
+  )
 }
 
-export default HeroSection;
+export default HeroSection

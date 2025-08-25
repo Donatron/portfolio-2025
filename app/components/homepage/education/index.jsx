@@ -1,12 +1,15 @@
 // @flow strict
-import Image from "next/image";
+import Image from 'next/image'
 
-import EducationTitle from "./education-title";
-import EducationDetails from "./education-details";
+import EducationTitle from './education-title'
+import EducationDetails from './education-details'
 
 function Education() {
   return (
-    <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+    <div
+      id="education"
+      className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]"
+    >
       <Image
         src="/section.svg"
         alt="Hero"
@@ -23,7 +26,7 @@ function Education() {
       <EducationTitle />
       <EducationDetails />
     </div>
-  );
-};
+  )
+}
 
-export default Education;
+export default Education

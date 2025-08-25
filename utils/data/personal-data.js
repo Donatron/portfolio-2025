@@ -10,5 +10,5 @@ export const personalData = {
   github: 'https://github.com/donatron',
   facebook: 'https://www.facebook.com/don.macarthur',
   linkedIn: 'https://www.linkedin.com/in/don-macarthur-652045a9/',
-  resume: ''
-};
+  resume: '',
+}

@@ -1,13 +1,16 @@
 // @flow strict
 
-import { skillsData } from "@/utils/data/skills";
-import Marquee from "react-fast-marquee";
+import { skillsData } from '@/utils/data/skills'
+import Marquee from 'react-fast-marquee'
 
-import Skill from "./skill";
+import Skill from './skill'
 
 function Skills() {
   return (
-    <div id="skills" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+    <div
+      id="skills"
+      className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]"
+    >
       <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
 
       <div className="flex justify-center -translate-y-[1px]">
@@ -36,15 +39,15 @@ function Skills() {
           play={true}
           direction="left"
         >
-          {
-            skillsData?.length
-              ? skillsData.map((skill, id) => <Skill key={`skill-${id}`} id={`skill-${id}`} skill={skill} />)
-              : null
-          }
+          {skillsData?.length
+            ? skillsData.map((skill, id) => (
+                <Skill key={`skill-${id}`} id={`skill-${id}`} skill={skill} />
+              ))
+            : null}
         </Marquee>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

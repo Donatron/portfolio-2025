@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import { personalData } from '@/utils/data/personal-data';
+import { personalData } from '@/utils/data/personal-data'
 
 function HeroTitle() {
   return (

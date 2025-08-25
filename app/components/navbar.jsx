@@ -1,5 +1,5 @@
 // @flow strict
-import Link from 'next/link';
+import Link from 'next/link'
 
 function Navbar() {
   return (
@@ -78,7 +78,7 @@ function Navbar() {
         </ul>
       </div>
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

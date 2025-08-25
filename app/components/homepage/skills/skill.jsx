@@ -1,7 +1,7 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 
-import { skillsImage } from "@/utils/skill-image";
+import { skillsImage } from '@/utils/skill-image'
 
 function Skill({ id, skill }) {
   return (
@@ -17,20 +17,17 @@ function Skill({ id, skill }) {
         </div>
         <div className="flex flex-col items-center justify-center gap-3 p-6">
           <div className="h-8 sm:h-10">
-            {
-              skill ? (
-            <Image
-              src={skillsImage(skill)?.src}
-              alt={skill}
-              width={40}
-              height={40}
-              className="h-full w-auto rounded-lg"
-            />) : null
-            }
+            {skill ? (
+              <Image
+                src={skillsImage(skill)?.src}
+                alt={skill}
+                width={40}
+                height={40}
+                className="h-full w-auto rounded-lg"
+              />
+            ) : null}
           </div>
-          <p className="text-white text-sm sm:text-lg">
-            {skill}
-          </p>
+          <p className="text-white text-sm sm:text-lg">{skill}</p>
         </div>
       </div>
     </div>

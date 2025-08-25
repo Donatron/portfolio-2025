@@ -1,12 +1,15 @@
 // @flow strict
 
-import Image from "next/image";
-import ExperienceDetails from "./experience-details";
-import ExperienceTitle from "./experience-title";
+import Image from 'next/image'
+import ExperienceDetails from './experience-details'
+import ExperienceTitle from './experience-title'
 
 function Experience() {
   return (
-    <div id="experience" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+    <div
+      id="experience"
+      className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]"
+    >
       <Image
         src="/section.svg"
         alt="Hero"
@@ -17,7 +20,7 @@ function Experience() {
       <ExperienceTitle />
       <ExperienceDetails />
     </div>
-  );
-};
+  )
+}
 
-export default Experience;
+export default Experience
