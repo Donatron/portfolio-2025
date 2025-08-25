@@ -2,7 +2,8 @@
 
 import Image from 'next/image'
 import ExperienceDetails from './experience-details'
-import ExperienceTitle from './experience-title'
+// import ExperienceTitle from './experience-title'
+import SectionTitle from '../../helper/section-title'
 
 function Experience() {
   return (
@@ -17,7 +18,8 @@ function Experience() {
         height={795}
         className="absolute top-0 -z-10"
       />
-      <ExperienceTitle />
+      <SectionTitle sectionName="Experience" />
+      {/* <ExperienceTitle /> */}
       <ExperienceDetails />
     </div>
   )

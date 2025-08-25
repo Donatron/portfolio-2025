@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import EducationTitle from './education-title'
 import EducationDetails from './education-details'
+import SectionTitle from '../../helper/section-title'
 
 function Education() {
   return (
@@ -23,7 +24,8 @@ function Education() {
         </div>
       </div>
 
-      <EducationTitle />
+      <SectionTitle sectionName="Education" />
+      {/* <EducationTitle /> */}
       <EducationDetails />
     </div>
   )
