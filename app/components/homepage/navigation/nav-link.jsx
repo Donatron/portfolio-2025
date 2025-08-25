@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 
-function NavLink({ id, href, title }) {
+function NavLink({ key, href, title }) {
   return (
-    <li key={`nav-item-${id}`}>
+    <li key={`nav-item-${key}`}>
       <a
         className="block px-4 py-2 no-underline outline-none hover:no-underline"
         href={`/#${href}`}
