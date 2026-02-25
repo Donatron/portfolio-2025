@@ -1,6 +1,7 @@
 // Check skill-image.js for full list of available skill images
 export const skillsData = [
   'AWS',
+  'AWS CPP',
   'Bootstrap',
   'CSS',
   'Express',

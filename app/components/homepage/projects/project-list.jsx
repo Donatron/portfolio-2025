@@ -3,11 +3,13 @@ import React from 'react'
 import ProjectCard from './project-card'
 import { projectsData } from '@/utils/data/projects-data'
 
+const sortedProjects = [...projectsData].sort((a, b) => a.order - b.order)
+
 function ProjectList() {
   return (
     <div className="pt-24">
       <div className="flex flex-col gap-6">
-        {projectsData.map((project, index) => (
+        {sortedProjects.map((project, index) => (
           <div
             id={`sticky-card-${index + 1}`}
             key={index}

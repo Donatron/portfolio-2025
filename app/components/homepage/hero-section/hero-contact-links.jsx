@@ -23,6 +23,8 @@ function HeroContactLinks() {
         role="button"
         target="_blank"
         href={personalData.resume}
+        rel="noopener noreferrer"
+        download
       >
         <span>Get Resume</span>
         <MdDownload size={16} />

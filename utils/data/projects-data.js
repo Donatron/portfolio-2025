@@ -18,6 +18,7 @@ export const projectsData = [
     role: 'Tech Lead',
     code: '',
     demo: '',
+    order: 2,
   },
   {
     id: 2,
@@ -37,6 +38,7 @@ export const projectsData = [
     role: 'Senior Developer',
     code: '',
     demo: '',
+    order: 3,
   },
   {
     id: 3,
@@ -47,6 +49,28 @@ export const projectsData = [
     code: '',
     role: 'Full Stack Developer',
     demo: '',
+    order: 4,
+  },
+  {
+    id: 4,
+    name: 'Project Brew',
+    description:
+      'Ingestion and analysis of data gathered in Project Madison (see below), incorporating AI Chat functionality for in-depth health analysis based on electronic health records and wearable device data',
+    tools: [
+      'AWS S3',
+      'AWS Bedrock',
+      'AWS RDS',
+      'AWS Lambda',
+      'Next.js',
+      'PostgreSQL',
+      'Tailwind CSS',
+      'TypeScript',
+      'Vercel',
+    ],
+    role: 'Tech Lead',
+    code: '',
+    demo: '',
+    order: 1,
   },
 ]
 
