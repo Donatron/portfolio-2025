@@ -32,7 +32,7 @@ function NavLinks() {
       id="navbar-default"
     >
       {navItems.map((item, i) => (
-        <NavLink key={i} href={item.href} title={item.title} />
+        <NavLink key={`nav-item-${i}`} href={item.href} title={item.title} />
       ))}
     </ul>
   )

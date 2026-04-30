@@ -26,7 +26,7 @@ function HeroContactLinks() {
         rel="noopener noreferrer"
         download
       >
-        <span>Get Resume</span>
+        <span>Download Resume</span>
         <MdDownload size={16} />
       </Link>
     </div>

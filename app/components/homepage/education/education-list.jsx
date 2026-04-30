@@ -16,6 +16,7 @@ function EducationList() {
               organistaion={education.institution}
               title={education.title}
               duration={education.duration}
+              certificationLink={education.certificationLink}
             />
           </GlowCard>
         ))}
