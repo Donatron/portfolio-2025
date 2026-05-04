@@ -61,6 +61,7 @@ export const projectsData = [
       'AWS Bedrock',
       'AWS RDS',
       'AWS Lambda',
+      'AWS SageMaker',
       'Next.js',
       'PostgreSQL',
       'Tailwind CSS',

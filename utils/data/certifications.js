@@ -1,5 +1,19 @@
 // Check skill-image.js for full list of available skill images
+// export const certifications = [
+//   'AWS Certified AI Practitioner',
+//   'AWS Certified Cloud Practitioner',
+// ]
+
 export const certifications = [
-  'AWS Certified AI Practitioner',
-  'AWS Certified Cloud Practitioner',
+  {
+    title: 'AWS Certified AI Practitioner',
+    verificationLink:
+      'https://cp.certmetrics.com/amazon/en/public/verify/credential/b22bcee505e6466082d8a5ac5bb8f2fe',
+  },
+  {
+    title: 'AWS Certified Cloud Practitioner',
+    verificationLink:
+      'https://cp.certmetrics.com/amazon/en/public/verify/credential/c20c52f27f354b4699edad84363f9d14',
+  },
+  ,
 ]

@@ -107,9 +107,9 @@ export const skillsImage = (skill) => {
       return angular
     case 'aws':
       return aws
-    case 'aws ai practitioner':
+    case 'aws certified ai practitioner':
       return awsAif
-    case 'aws cloud practitioner':
+    case 'aws certified cloud practitioner':
       return awsCpp
     case 'azure':
       return azure

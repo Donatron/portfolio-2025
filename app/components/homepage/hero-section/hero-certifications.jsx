@@ -9,7 +9,7 @@ function HeroCertifications() {
       <span className="text-gray-400">{`['`}</span>
       {certifications.map((certification, id) => (
         <React.Fragment key={id}>
-          <span className="text-amber-300">{certification}</span>
+          <span className="text-amber-300">{certification.title}</span>
           <span className="text-gray-400">
             {id < certifications.length - 1 ? "', '" : "']"}
           </span>

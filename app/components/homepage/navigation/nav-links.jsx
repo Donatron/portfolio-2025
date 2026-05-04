@@ -16,6 +16,10 @@ const navItems = [
     href: 'skills',
   },
   {
+    title: 'Certifications',
+    href: 'certifications',
+  },
+  {
     title: 'Education',
     href: 'education',
   },
