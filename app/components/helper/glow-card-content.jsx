@@ -1,9 +1,8 @@
 import React from 'react'
 import { BsPersonWorkspace } from 'react-icons/bs'
 import Image from 'next/image'
-import Link from 'next/link'
 
-function GlowCarContent({ organistaion, title, duration, certificationLink }) {
+function GlowCardContent({ organistaion, title, duration }) {
   return (
     <div className="p-3 relative">
       <Image
@@ -25,17 +24,10 @@ function GlowCarContent({ organistaion, title, duration, certificationLink }) {
             {title}
           </p>
           <p className="text-sm sm:text-base">{organistaion}</p>
-          {certificationLink ? (
-            <div className="mt-2">
-              <Link className="text-[#16f2b3]" href={certificationLink}>
-                Verify Certification
-              </Link>
-            </div>
-          ) : null}
         </div>
       </div>
     </div>
   )
 }
 
-export default GlowCarContent
+export default GlowCardContent
