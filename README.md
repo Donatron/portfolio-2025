@@ -166,8 +166,8 @@ export const personalData = {
   stackOverflow: 'https://stackoverflow.com/users/16840768/abu-said',
   leetcode: 'https://leetcode.com/said3812/',
   devUsername: 'said7388',
-  resume: '...'
-};
+  resume: '...',
+}
 ```
 
 `devUsername` is used for fetching blog posts from `dev.to`.
