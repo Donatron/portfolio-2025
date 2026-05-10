@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import ExperienceDetails from './experience-details'
-// import ExperienceTitle from './experience-title'
 import SectionTitle from '../../helper/section-title'
 
 function Experience() {
@@ -19,7 +18,6 @@ function Experience() {
         className="absolute top-0 -z-10"
       />
       <SectionTitle sectionName="Experience" />
-      {/* <ExperienceTitle /> */}
       <ExperienceDetails />
     </div>
   )

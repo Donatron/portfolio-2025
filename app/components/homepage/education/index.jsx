@@ -25,7 +25,6 @@ function Education() {
       </div>
 
       <SectionTitle sectionName="Education" />
-      {/* <EducationTitle /> */}
       <EducationDetails />
     </div>
   )
