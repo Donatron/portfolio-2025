@@ -1,6 +1,17 @@
 // Check skill-image.js for full list of available skill images
-export const skillsData = [
+
+export const coreSkills = [
+  'React',
+  'Typescript',
+  'Next.js',
+  'Node.js',
   'AWS',
+  'MySQL',
+  'PostgreSQL',
+  'MongoDB',
+]
+
+export const secondarySkills = [
   'Bootstrap',
   'CSS',
   'Express',
@@ -9,17 +20,13 @@ export const skillsData = [
   'GCP',
   'Git',
   'HTML',
-  'Javascript',
+  'JavaScript',
   'Jest',
   'JSON',
-  'MaterialUI',
-  'MongoDB',
-  'MySQL',
-  'Next JS',
-  'Node JS',
-  'React',
+  'Material UI',
   'Redux',
   'SASS',
   'Tailwind',
-  'Typescript',
 ]
+
+export const skillsData = [...coreSkills, ...secondarySkills]

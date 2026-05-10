@@ -3,6 +3,8 @@ import adobeaudition from '../app/assets/svg/skills/adobeaudition.svg'
 import afterEffects from '../app/assets/svg/skills/after-effects.svg'
 import angular from '../app/assets/svg/skills/angular.svg'
 import aws from '../app/assets/svg/skills/aws.svg'
+import awsAif from '../app/assets/png/skills/aws-certified-ai-practitioner.png'
+import awsCpp from '../app/assets/png/skills/aws-certified-cloud-practitioner.png'
 import azure from '../app/assets/svg/skills/azure.svg'
 import blender from '../app/assets/svg/skills/blender.svg'
 import bootstrap from '../app/assets/svg/skills/bootstrap.svg'
@@ -105,6 +107,10 @@ export const skillsImage = (skill) => {
       return angular
     case 'aws':
       return aws
+    case 'aws certified ai practitioner':
+      return awsAif
+    case 'aws certified cloud practitioner':
+      return awsCpp
     case 'azure':
       return azure
     case 'blender':
@@ -185,7 +191,7 @@ export const skillsImage = (skill) => {
       return linux
     case 'markdown':
       return markdown
-    case 'materialui':
+    case 'material ui':
       return materialui
     case 'matlab':
       return matlab
@@ -197,11 +203,11 @@ export const skillsImage = (skill) => {
       return mongoDB
     case 'mysql':
       return mysql
-    case 'next js':
+    case 'next.js':
       return nextJS
     case 'nginx':
       return nginx
-    case 'node js':
+    case 'node.js':
       return nodejs
     case 'numpy':
       return numpy

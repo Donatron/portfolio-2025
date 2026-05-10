@@ -22,10 +22,24 @@ function HeroHireable() {
         <span className="text-amber-300">&amp;&amp;</span>
       </div>
       <div>
-        <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-        <span className="mr-2 text-white">skills.length</span>
+        <span className="ml-12 lg:ml-24 text-gray-400">{`(`}</span>
+      </div>
+      <div>
+        <span className="ml-16 lg:ml-28 text-cyan-400">this.</span>
+        <span className="mr-2 text-white">coreSkills.length</span>
         <span className="mr-2 text-amber-300">&gt;=</span>
         <span className="text-orange-400">5</span>
+        <span className="text-amber-300"> ||</span>
+      </div>
+      <div>
+        <span className="ml-16 lg:ml-28 text-cyan-400">this.</span>
+        <span className="mr-2 text-white">secondarySkills.length</span>
+        <span className="mr-2 text-amber-300">&gt;=</span>
+        <span className="text-orange-400">5</span>
+        <span className="text-amber-300"></span>
+      </div>
+      <div>
+        <span className="ml-12 lg:ml-24  mr-2 text-gray-400">{`)`}</span>
       </div>
       <div>
         <span className="ml-8 lg:ml-16 mr-2 text-gray-400">{`);`}</span>

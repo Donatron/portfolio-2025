@@ -2,7 +2,7 @@ import React from 'react'
 import { BsPersonWorkspace } from 'react-icons/bs'
 import Image from 'next/image'
 
-function GlowCarcContent({ organistaion, title, duration }) {
+function GlowCardContent({ organistaion, title, duration }) {
   return (
     <div className="p-3 relative">
       <Image
@@ -30,4 +30,4 @@ function GlowCarcContent({ organistaion, title, duration }) {
   )
 }
 
-export default GlowCarcContent
+export default GlowCardContent
