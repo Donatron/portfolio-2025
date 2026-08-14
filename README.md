@@ -239,23 +239,22 @@ To display your blog posts from dev.to on the portfolio:
 
 # Packages Used :package:
 
-|   Used Package List    |
-| :--------------------: |
-|    @emailjs/browser    |
-|  @next/third-parties   |
-|         axios          |
-|      lottie-react      |
-|          next          |
-|       nodemailer       |
-|         react          |
-|       react-dom        |
-|   react-fast-marquee   |
-| react-google-recaptcha |
-|      react-icons       |
-|     react-toastify     |
-|         sharp          |
-|          sass          |
-|      tailwindcss       |
+|  Used Package List  |
+| :-----------------: |
+|  @emailjs/browser   |
+| @next/third-parties |
+|        axios        |
+|    lottie-react     |
+|        next         |
+|     nodemailer      |
+|        react        |
+|      react-dom      |
+| react-fast-marquee  |
+|     react-icons     |
+|   react-toastify    |
+|        sharp        |
+|        sass         |
+|     tailwindcss     |
 
 ---
 

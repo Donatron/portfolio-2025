@@ -23,18 +23,27 @@ export async function POST(request) {
       </div>
     `
 
-    // 🚀 Fire-and-forget send
-    resend.emails
-      .send({
-        from: 'Portfolio <onboarding@resend.dev>',
-        to: process.env.EMAIL_ADDRESS,
-        subject: `New Message From ${name}`,
-        reply_to: email,
-        html,
-      })
-      .catch((err) => console.error('Resend error:', err))
+    const { error } = await resend.emails.send({
+      from: 'Portfolio <onboarding@resend.dev>',
+      to: process.env.EMAIL_ADDRESS,
+      subject: `New Message From ${name}`,
+      reply_to: email,
+      html,
+    })
 
-    // Respond immediately
+    if (error) {
+      console.error('Resend error:', error)
+
+      return NextResponse.json(
+        {
+          success: false,
+          message: 'Unable to send your message.',
+        },
+        { status: 500 }
+      )
+    }
+
+    // Return success response
     return NextResponse.json(
       {
         success: true,
