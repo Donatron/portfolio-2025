@@ -10,7 +10,7 @@ frontend:
 
     build:
       commands:
-        - env | grep -e RESEND_API_KEY -e EMAIL_ADDRESS >> .env.production
+        - env | grep -e EMAIL_ADDRESS >> .env.production
         - pnpm build
 
   artifacts:
