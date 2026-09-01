@@ -4,7 +4,8 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm use 22.14.0
+        - nvm install
+        - nvm use
         - corepack enable
         - pnpm install --frozen-lockfile
 
