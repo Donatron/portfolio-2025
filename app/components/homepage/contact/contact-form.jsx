@@ -38,10 +38,7 @@ function ContactForm() {
 
     try {
       setIsLoading(true)
-      await axios.post(
-        `${process.env.NEXT_PUBLIC_APP_URL}/api/contact`,
-        userInput
-      )
+      await axios.post(`/api/contact`, userInput)
 
       toast.success("Thanks for your message! I'll get back to you shortly.", {
         icon: <CustomSuccessIcon />,
